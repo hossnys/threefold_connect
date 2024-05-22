@@ -32,11 +32,11 @@ storage:
   className: manual
   size: 1Gi
   rights: ReadWriteOnce
-  hostpath: "/opt/3botlogin/"
+  hostpath: "/opt/3botlogin-staging/"
 
 claims:
   data:
-    name: threebotlogin
+    name: threebotlogin-staging
     accessModes: ReadWriteMany
     storage: 2G
 
