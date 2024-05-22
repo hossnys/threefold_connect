@@ -16,9 +16,10 @@ RUN apt-get install -y nodejs
 #RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" > /etc/apt/sources.list.d/yarn.list
 
 #RUN apt-get update && apt-get install yarn
-RUN npm install yarn
+
 
 WORKDIR /app
+RUN npm install yarn
 COPY package.json package.json
 COPY yarn.lock yarn.lock
 RUN yarn install
